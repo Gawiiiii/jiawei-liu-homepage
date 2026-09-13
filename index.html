@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="刘家维的个人研究主页，关注生成式模型、多模态安全对齐与人脸隐私保护。" />
+    <title>刘家维 · 研究主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="回到顶部"><span class="brand-mark">LJ</span><span>LIU JIAWEI</span></a>
+        <nav class="nav" aria-label="主导航">
+          <a href="#research">研究</a><a href="#experience">经历</a><a href="#skills">能力</a><a href="#contact">联系</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="切换深色模式"><span class="theme-icon">◐</span><span class="theme-label">明暗</span></button>
+      </header>
+
+      <main id="top">
+        <section class="hero section-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="pulse"></span> RESEARCH PORTFOLIO · 2026</p>
+            <h1>刘家维<span class="name-dot">．</span></h1>
+            <p class="hero-lede">武汉大学 · 计算机科学与技术<br /><em>让生成式模型更可控，也让身份更自由。</em></p>
+            <div class="hero-actions"><a class="button button-dark" href="#research">浏览研究 <span>↗</span></a><a class="text-link" href="#contact">与我联系 <span>→</span></a></div>
+          </div>
+          <div class="hero-aside">
+            <div class="portrait-wrap"><div class="portrait-ring"></div><img src="avatar.png" alt="刘家维证件照" /></div>
+            <div class="hero-note"><span class="note-index">01</span><p>Exploring privacy-preserving<br />generative intelligence.</p></div>
+          </div>
+        </section>
+
+        <section class="ticker" aria-label="研究关键词"><div class="ticker-track"><span>GENERATIVE MODELS</span><i>✳</i><span>FACE PRIVACY</span><i>✳</i><span>SAFETY & ALIGNMENT</span><i>✳</i><span>GENERATIVE MODELS</span><i>✳</i><span>FACE PRIVACY</span><i>✳</i></div></section>
+
+        <section class="intro section-grid" id="about">
+          <div class="section-label"><span>00</span><span>ABOUT</span></div>
+          <div class="intro-content"><h2>研究，始于对<br /><span>边界的好奇。</span></h2><div class="intro-text"><p>我是一名来自武汉大学的计算机科学与技术专业学生，持续探索生成式模型与人脸隐私保护的交叉地带。</p><p>当前研究聚焦于扩散模型中的身份操纵、可重建痕迹破坏，以及如何在实用性、安全性与视觉质量之间找到新的平衡。</p><div class="signature">LJW <span>—</span> 以代码记录想法</div></div></div>
+        </section>
+
+        <section class="research section-grid" id="research">
+          <div class="section-label"><span>01</span><span>RESEARCH</span></div>
+          <div class="research-content"><div class="section-heading"><h2>正在推进的<br /><span>问题与答案</span></h2><span class="section-caption">SELECTED WORKS<br />2025 — PRESENT</span></div>
+            <div class="research-list">
+              <article class="research-card featured"><div class="card-meta"><span>01 / PAPER</span><span>NEURIPS 26 · UNDER REVIEW</span></div><h3>On the Feasibility of Identity Manipulation for Diffusion-Based Face Privacy Preservation</h3><p class="card-cn">面向扩散模型人脸隐私保护的可行性感知身份操纵框架 <b>FADIM</b>。</p><div class="metrics"><div><strong>80.23%</strong><span>黑盒 verification<br />平均 PSR</span></div><div><strong>58.51%</strong><span>identification<br />rank-1 PSR</span></div><div><strong>16.8</strong><span>视觉质量<br />FID</span></div></div><button class="expand-button" type="button" aria-expanded="false">展开研究摘要 <span>＋</span></button><div class="card-detail"><p>从扩散去噪动力学出发，提出参考轨迹锚定、LoRA 动态适配器与联合损失，在 CelebA-HQ、LADN、LFW 上兼顾身份扰动与生成稳定性。</p></div></article>
+              <article class="research-card"><div class="card-meta"><span>02 / PAPER</span><span>FIRST AUTHOR · UNDER REVIEW</span></div><h3>Beyond Appearance: Disrupting Reconstructable Traces Privacy-Preserving Face Recognition</h3><p class="card-cn">针对隐私保护人脸识别中的重建痕迹，提出主动破坏框架 <b>RapFace</b>。</p><div class="metrics"><div><strong>0.11</strong><span>五个数据集<br />平均匿名化 SSIM</span></div><div><strong>88.4%</strong><span>跨模型<br />识别准确率</span></div><div><strong>5×</strong><span>评测数据集<br />全面验证</span></div></div><button class="expand-button" type="button" aria-expanded="false">展开研究摘要 <span>＋</span></button><div class="card-detail"><p>结合 3DMM 感知初始化、识别空间多模型集成与时空随机强化，主动降低保护图像中的可重建线索，同时保持跨模型识别有效性。</p></div></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="education section-grid" id="experience"><div class="section-label"><span>02</span><span>JOURNEY</span></div><div class="journey-content"><div class="section-heading"><h2>一路走来，<br /><span>保持动手。</span></h2><span class="section-caption">EDUCATION &<br />EXPERIENCE</span></div><div class="timeline"><div class="timeline-item"><div class="timeline-year">2023 — 2027</div><div><h3>武汉大学</h3><p>计算机科学与技术 · 专业排名 42 / 242（18%）</p><p class="muted">CET-6 607 · CET-4 670 · 乙等奖学金 1 次 · 丙等奖学金 2 次</p></div></div><div class="timeline-item"><div class="timeline-year">2025.04 — 08</div><div><h3>大学生系统能力大赛 · 决赛三等奖</h3><p>队长 / 动态多页面组合压缩 zram</p><p class="muted">小文件读写场景压缩率平均提升 9.57%，部分文件达 22%。</p></div></div><div class="timeline-item"><div class="timeline-year">2025 — 2026</div><div><h3>持续研究与竞赛</h3><p>蓝桥杯软件赛大学 A 组 C++ 二等奖 · 团体程序设计天梯赛三等奖</p><p class="muted">PRICAI 26（CCF-C）会议发表论文 · 软件设计师 · CCF-CSP 认证</p></div></div></div></div></section>
+
+        <section class="skills section-grid" id="skills"><div class="section-label"><span>03</span><span>TOOLKIT</span></div><div class="skills-content"><div class="section-heading"><h2>把想法，<br /><span>变成实验。</span></h2></div><div class="skill-groups"><div class="skill-group"><span class="skill-title">LANGUAGES & SYSTEMS</span><div class="tags"><span>Python</span><span>C / C++</span><span>Linux</span><span>LaTeX</span></div></div><div class="skill-group"><span class="skill-title">ML & FRAMEWORKS</span><div class="tags"><span>PyTorch</span><span>LangChain</span><span>LoRA</span><span>蒸馏</span><span>Stable Diffusion</span></div></div><div class="skill-group"><span class="skill-title">RESEARCH FOCUS</span><div class="tags tags-accent"><span>生成式模型</span><span>多模态安全对齐</span><span>人脸隐私保护</span></div></div></div></div></section>
+
+        <section class="contact section-grid" id="contact"><div class="contact-copy"><p class="eyebrow">LET'S CONNECT</p><h2>交换一个<br /><span>好问题。</span></h2><p>如果你也在关注生成式智能、隐私计算或有趣的研究想法，欢迎联系我。</p><div class="contact-links"><a href="mailto:ljwhh123@163.com">ljwhh123@163.com <span>↗</span></a><a href="tel:13653104399">136 5310 4399 <span>↗</span></a></div></div><div class="contact-mark">LJ<span>W</span><small>WUHAN · CHINA</small></div></section>
+      </main>
+      <footer><span>© 2026 刘家维</span><span>Built with curiosity · 武汉大学</span><a href="#top">BACK TO TOP ↑</a></footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
